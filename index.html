@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPRCET Links Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #2e7d32 0%, #ffeb3b 100%);
+            color: #333;
+            min-height: 100vh;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 15px 0;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        
+        h1 {
+            font-size: 1.6rem;
+            margin-bottom: 5px;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            letter-spacing: 0.5px;
+        }
+        
+        .subtitle {
+            font-size: 0.9rem;
+            color: #f5f5f5;
+            opacity: 0.9;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+            width: 100%;
+        }
+        
+        .box {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            padding: 20px 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+            aspect-ratio: 1 / 1;
+        }
+        
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.95);
+        }
+        
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #4caf50, #8bc34a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .box-title {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #2e7d32;
+            font-weight: 600;
+        }
+        
+        .box-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #ffc107, #ffeb3b);
+            color: #333;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 12px;
+            transition: all 0.3s;
+            font-size: 0.8rem;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        .box-link:hover {
+            background: linear-gradient(45deg, #ffeb3b, #ffc107);
+            transform: scale(1.05);
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .box-description {
+            margin-bottom: 8px;
+            line-height: 1.4;
+            font-size: 0.8rem;
+            color: #555;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            color: white;
+            font-size: 0.8rem;
+            opacity: 0.9;
+            width: 100%;
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        
+        .main-logo {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #4caf50, #ffeb3b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            margin: 0 auto;
+        }
+        
+        /* For the fifth box, we'll make it span both columns */
+        .full-width {
+            grid-column: 1 / span 2;
+            aspect-ratio: 2 / 1;
+        }
+        
+        /* Tablet and Desktop adjustments */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 500px;
+            }
+            
+            .grid {
+                gap: 20px;
+            }
+            
+            .box {
+                padding: 25px 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .full-width {
+                grid-column: 1 / span 2;
+                aspect-ratio: 2 / 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <div class="main-logo">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+            </div>
+            <h1>NPR COLLEGE OF ENGINEERING & TECHNOLOGY</h1>
+            <p class="subtitle">Quick Access to All Important Links</p>
+        </header>
+        
+        <div class="grid">
+            <div class="box">
+                <div class="logo">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h2 class="box-title">PCDA App</h2>
+                <p class="box-description">Download the official PCDA mobile application for students</p>
+                <a href="https://play.google.com/store/apps/details?id=com.ps_student" class="box-link" target="_blank">
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+            
+            <div class="box">
+                <div class="logo">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h2 class="box-title">PS Portal</h2>
+                <p class="box-description">Access the PS Portal for student management system</p>
+                <a href="https://npr.tylo.co.in/auth/login" class="box-link" target="_blank">
+                    <i class="fas fa-sign-in-alt"></i> Access
+                </a>
+            </div>
+            
+            <div class="box">
+                <div class="logo">
+                    <i class="fas fa-university"></i>
+                </div>
+                <h2 class="box-title">NPR GI</h2>
+                <p class="box-description">NPR Group of Institutions portal for academic information</p>
+                <a href="https://npr-gi.uc-school.com/site/login" class="box-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> Visit
+                </a>
+            </div>
+            
+            <div class="box">
+                <div class="logo">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h2 class="box-title">NPRCET Website</h2>
+                <p class="box-description">Official website of NPR College of Engineering & Technology</p>
+                <a href="https://www.nprcet.org/site/engineering?sch_id=90" class="box-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> Visit
+                </a>
+            </div>
+            
+            <div class="box full-width">
+                <div class="logo">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h2 class="box-title">CET Notes</h2>
+                <p class="box-description">Access comprehensive study materials and notes for CET preparation</p>
+                <a href="https://drive.google.com/file/d/1ZdHDS5PL924YuqvcPQboAKEbxnj7u1aT/view?usp=drivesdk" class="box-link" target="_blank">
+                    <i class="fas fa-download"></i> Access Notes
+                </a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>NPR College of Engineering & Technology &copy; 2023</p>
+        </footer>
+    </div>
+</body>
+</html>
