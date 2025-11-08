@@ -25,7 +25,7 @@
         
         .container {
             width: 100%;
-            max-width: 500px;
+            max-width: 1200px;
             margin: 0 auto;
         }
         
@@ -111,6 +111,276 @@
             font-size: 1.1rem;
             margin-bottom: 8px;
             color: #2e7d32;
+            font-weight: 600;
+        }
+        
+        .big-box .box-title {
+            font-size: 1.4rem;
+        }
+        
+        .box-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #ffc107, #ffeb3b);
+            color: #333;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 12px;
+            transition: all 0.3s;
+            font-size: 0.8rem;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        .big-box .box-link {
+            padding: 10px 20px;
+            font-size: 0.9rem;
+        }
+        
+        .box-link:hover {
+            background: linear-gradient(45deg, #ffeb3b, #ffc107);
+            transform: scale(1.05);
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .box-description {
+            margin-bottom: 8px;
+            line-height: 1.4;
+            font-size: 0.8rem;
+            color: #555;
+        }
+        
+        .big-box .box-description {
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            color: white;
+            font-size: 0.8rem;
+            opacity: 0.9;
+            width: 100%;
+        }
+        
+        .powered-by {
+            margin-top: 5px;
+            font-style: italic;
+            font-size: 0.75rem;
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        
+        .main-logo {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #4caf50, #ffeb3b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            margin: 0 auto;
+        }
+        
+        /* Desktop adjustments */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 1200px;
+                padding: 30px;
+            }
+            
+            header {
+                padding: 30px 0;
+                margin-bottom: 30px;
+            }
+            
+            h1 {
+                font-size: 2.8rem;
+                margin-bottom: 10px;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .grid {
+                gap: 30px;
+                margin-top: 30px;
+            }
+            
+            .box {
+                padding: 30px 25px;
+                border-radius: 20px;
+            }
+            
+            .logo {
+                width: 80px;
+                height: 80px;
+                font-size: 2.2rem;
+                margin-bottom: 20px;
+            }
+            
+            .big-box .logo {
+                width: 100px;
+                height: 100px;
+                font-size: 3rem;
+            }
+            
+            .box-title {
+                font-size: 1.6rem;
+                margin-bottom: 15px;
+            }
+            
+            .big-box .box-title {
+                font-size: 2.2rem;
+            }
+            
+            .box-link {
+                padding: 12px 25px;
+                font-size: 1rem;
+                border-radius: 25px;
+                margin-top: 20px;
+            }
+            
+            .big-box .box-link {
+                padding: 15px 30px;
+                font-size: 1.2rem;
+            }
+            
+            .box-description {
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: 15px;
+            }
+            
+            .big-box .box-description {
+                font-size: 1.2rem;
+            }
+            
+            .main-logo {
+                width: 120px;
+                height: 120px;
+                font-size: 3rem;
+                margin-bottom: 20px;
+            }
+            
+            footer {
+                margin-top: 50px;
+                padding: 25px;
+                font-size: 1rem;
+            }
+            
+            .powered-by {
+                font-size: 0.9rem;
+            }
+        }
+        
+        /* Large desktop adjustments */
+        @media (min-width: 1024px) {
+            .grid {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 25px;
+            }
+            
+            .big-box {
+                grid-column: 1 / span 4;
+                aspect-ratio: 3 / 1;
+            }
+            
+            .small-box {
+                aspect-ratio: 1 / 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <div class="main-logo">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+            </div>
+            <h1>NPR COLLEGE OF ENGINEERING & TECHNOLOGY</h1>
+            <p class="subtitle">Quick Access to All Important Links</p>
+        </header>
+        
+        <div class="grid">
+            <!-- Big Box - NPRCET Website -->
+            <div class="box big-box">
+                <div class="logo">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h2 class="box-title">NPRCET Website</h2>
+                <p class="box-description">Official website of NPR College of Engineering & Technology. Explore programs, faculty, facilities, and more about our institution.</p>
+                <a href="https://www.nprcet.org/site/engineering?sch_id=90" class="box-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> Visit Official Website
+                </a>
+            </div>
+            
+            <!-- Small Boxes -->
+            <div class="box small-box">
+                <div class="logo">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h2 class="box-title">PCDA App</h2>
+                <p class="box-description">Download the official PCDA mobile application for students</p>
+                <a href="https://play.google.com/store/apps/details?id=com.ps_student" class="box-link" target="_blank">
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+            
+            <div class="box small-box">
+                <div class="logo">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h2 class="box-title">PS Portal</h2>
+                <p class="box-description">Access the student management system</p>
+                <a href="https://npr.tylo.co.in/auth/login" class="box-link" target="_blank">
+                    <i class="fas fa-sign-in-alt"></i> Access
+                </a>
+            </div>
+            
+            <div class="box small-box">
+                <div class="logo">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h2 class="box-title">CET Notes</h2>
+                <p class="box-description">Access comprehensive study materials for CET preparation</p>
+                <a href="https://nprnotes.netlify.app/" class="box-link" target="_blank">
+                    <i class="fas fa-download"></i> Access Notes
+                </a>
+            </div>
+            
+            <div class="box small-box">
+                <div class="logo">
+                    <i class="fas fa-comment-alt"></i>
+                </div>
+                <h2 class="box-title">Feedback</h2>
+                <p class="box-description">Share your valuable feedback to help us improve</p>
+                <a href="https://insproplus.com/NPRFEEDBACK/Student_Default.aspx" class="box-link" target="_blank">
+                    <i class="fas fa-pencil-alt"></i> Give Feedback
+                </a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>NPR College of Engineering & Technology &copy; 2025</p>
+            <p class="powered-by">Powered by Thamizh</p>
+        </footer>
+    </div>
+</body>
+                    </html>            color: #2e7d32;
             font-weight: 600;
         }
         
@@ -291,3 +561,4 @@
     </div>
 </body>
 </html>
+
